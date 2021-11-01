@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+
+  
+
+<head>
+
+      
+  <meta charset="utf-8">
+
+      <title>Lesson 19 - Swapping Images</title>
+
+      
+  <meta name="viewport"           content="width=device-width, initial-scale=1">
+
+
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      background-image: url(image5.jpg);
+      background-size: cover;
+    }
+
+    #main {
+      height: 100%;
+      width: 100%;
+      display: table;
+      overflow: hidden;
+    }
+
+    #leftContent,
+    #rightContent {
+      display: table-cell;
+      padding: 0px;
+    }
+
+    #leftContent {
+      width: 35%;
+
+      float: left;
+      margin-bottom: -2000px;
+      padding-bottom: 2000px;
+    }
+
+    #rightContent {
+      width: 65%;
+
+      color: black;
+      float: left;
+      margin-bottom: -2000px;
+      padding-bottom: 2000px;
+    }
+  </style>
+    
+</head>
+
+<body>
+
+
+  <head>
+    <h1>Lesson19 - Swapping Images</h1>
+  </head>
+
+
+  <section id="main">
+
+
+
+    <section id="leftContent">
+
+
+
+          
+
+    </section>
+
+    <section id="rightContent">
+
+      <p>If you’ve been paying attention, you will realize that this script is not unobtrusive. In fact, the easiest way
+        to determine if a script is unobtrusive is to see if there is JavaScript inside any HTML attributes. In this
+        case, the onclick attribute is holding the JavaScript that makes the page work, and this makes it obtrusive
+        JavaScript.
+
+        To make this script unobtrusive, you need to move the JavaScript out of the links and into a separate script
+        file. There are many ways you could do this, but they are beyond the scope of this lesson. One good place to
+        learn more about unobtrusive JavaScript is in the book Sams Teach Yourself JavaScript in 24 Hours.</p>
+
+         
+
+    </section>
+
+
+  </section>
+
+
+  <div>
+    <p style="font-style: italic;">Click on the small images to change the larger image, above.</p>
+  </div>
+
+
+
+
+  <div>
+    <a href="#" onclick="javascript:document.images['large_photo'].src = 
+
+      'image1'">
+
+      <img style="border: 1px solid black; margin-right: 3px; height: 100px; width: auto;" src="image1small.jpg"
+        alt="photo #1"></a>
+
+    <a href="#" onclick="javascript:document.images['large_photo'].src = 
+
+    'image2'">
+
+
+      <img style="border: 1px solid black; margin-right: 3px; height: 100px; width: auto;" src="image2small.jpg"
+        alt="photo #2"></a>
+
+
+    <a href="#" onclick="javascript:document.images['large_photo'].src = 
+
+    'image3'">
+
+
+      <img style="border: 1px solid black; margin-right: 3px; height: 100px; width: auto;" src="image3small.jpg"
+        alt="photo #3"></a>
+
+    <a href="#" onclick="javascript:document.images['large_photo'].src = 
+
+    'image4'">
+
+      <img style="border: 1px solid black; margin-right: 3px; height: 100px; width: auto;" src="image4small.jpg"
+        alt="photo #4"></a>
+  </div>
+
+  <script>
+
+
+
+  </script>
+
+
+</body>
+
+</html>
